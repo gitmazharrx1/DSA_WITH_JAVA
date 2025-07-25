@@ -37,4 +37,27 @@ public class customLinkedList {
         }
     }
 
+    public int indexOf(int value) {
+        int index = 0;
+        var currentNode = head;
+        while (currentNode != null) {
+            if (currentNode.value == value) {
+                return index;
+            } else {
+                index++;
+                currentNode = currentNode.next;
+            }
+        }
+        return -1;
+
+    }
+
+    public boolean contains(int value) {
+        int number = indexOf(value);
+        if (number != -1) {
+            return true;
+        }
+        return false;
+    }
+
 }

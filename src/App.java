@@ -17,5 +17,6 @@ public class App {
         linkedList.add(20);
         linkedList.add(30);
         linkedList.addFirst(5);
-    }
+        System.out.println(linkedList.indexOf(30));
+    };
 }
